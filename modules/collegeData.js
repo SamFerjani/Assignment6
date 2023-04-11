@@ -222,11 +222,14 @@ module.exports.addCourse = function (courseData) {
         courseData[prop] = null;
       }
     }
+    db.Course.findAll()
+      .then((courses) => {
+        courseData.courseID = courses.length + 1;
 
-    // Invoke Course.create() function to add course to database
-    db.Course.create(courseData)
-      .then(() => {
-        resolve();
+        // Invoke Course.create() function to add course to database
+        db.Course.create(courseData).then(() => {
+          resolve();
+        });
       })
       .catch((err) => {
         reject("Unable to create course");

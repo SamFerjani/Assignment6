@@ -118,7 +118,7 @@ app.get("/students", async (req, res) => {
   try {
     if (req.query.course) {
       const course = parseInt(req.query.course);
-      if (isNaN(course) || course < 1 || course > 7) {
+      if (isNaN(course) || course < 1) {
         throw new Error("Invalid course number");
       }
       const students = await cd.getStudentsByCourse(course);
@@ -128,7 +128,7 @@ app.get("/students", async (req, res) => {
       res.render("students", { students });
     }
   } catch (err) {
-    res.render("students", { message: "no results" });
+    res.render("students", { message: `no results : ${err}` });
   }
 });
 
