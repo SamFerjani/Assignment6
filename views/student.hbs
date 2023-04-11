@@ -91,19 +91,16 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Course Type:</label>
-                            <select class="form-control" name="course">
-                                <option value="1" {{#equal viewData.student.course "1" }}selected{{/equal}}>Course 1</option>
-                                <option value="2" {{#equal viewData.student.course "2" }}selected{{/equal}}>Course 2</option>
-                                <option value="3" {{#equal viewData.student.course "3" }}selected{{/equal}}>Course 3</option>
-                                <option value="4" {{#equal viewData.student.course "4" }}selected{{/equal}}>Course 4</option>
-                                <option value="5" {{#equal viewData.student.course "5" }}selected{{/equal}}>Course 5</option>
-                                <option value="6" {{#equal viewData.student.course "6" }}selected{{/equal}}>Course 6</option>
-                                <option value="7" {{#equal viewData.student.course "7" }}selected{{/equal}}>Course 7</option>
-                                <option value="8" {{#equal viewData.student.course "8" }}selected{{/equal}}>Course 8</option>
-                                <option value="9" {{#equal viewData.student.course "9" }}selected{{/equal}}>Course 9</option>
-                                <option value="10" {{#equal viewData.student.course "10" }}selected{{/equal}}>Course 10</option>
-                                <option value="11" {{#equal viewData.student.course "11" }}selected{{/equal}}>Course 11</option>
-                            </select>
+                             {{#if viewData.courses}}
+                                <select class="form-control" name="course" id="course">
+                                    <option value="">Select Course</option>
+                            {{#each viewData.courses}}
+                                    <option value="{{courseId}}" {{#if selected}} selected {{/if}} >{{courseCode}} </option>
+                                {{/each}}
+                                </select>
+                            {{else}}
+                                <div>No Courses</div>
+                            {{/if}}
                         </div>
                     </div>
                 </div>
