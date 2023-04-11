@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;1,500;1,700&display=swap');
+
+html,
+body {
+    font-family: 'Shantell Sans', sans-serif;
+    font-weight: 300;
+    background: purple;
+    background: linear-gradient(to bottom, #c93692, white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+
+
+table {
+    border: 1px solid white;
+    border-collapse: collapse;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+td,
+th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #a75882;
+    background-image: linear-gradient(to bottom, #e9ecef, #c892ce);
+}
+
+tr:nth-child(odd) {
+    background-color: #9f6089;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Shantell Sans', sans-serif;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    font-style: italic;
+}
+
+div {
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border: 0px solid #000000;
+}
+
+
+div {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+hr {
+    height: 2px;
+    border: none;
+    background-color: #9b0a4e;
+    margin: 20px 0;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-family: 'Shantell Sans', sans-serif;
+    color: #6c19ba;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+    font-family: 'Shantell Sans', sans-serif;
+    color: #343a40;
+}
+
+.nav-link:hover {
+    color: #6c19ba;
+}
+
+.btn-primary {
+    background-color: #6c19ba;
+    background-image: linear-gradient(to bottom, #6c19ba, #0069d9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+}
+
+a {
+    font-weight: bold;
+    color: #6c19ba;
+}
+
+a:hover {
+    color: #4500b3;
+}
+
+legend {
+    padding: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #6c19ba;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
