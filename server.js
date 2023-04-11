@@ -6,7 +6,7 @@
  *
  *  Name: Oussama Issam Ferjani __ Student ID: 171852213 __ Date: 03/05/2023 ________
  *
- *  Online (Cycliic) Link: https://crowded-pocketbook-duck.cyclic.app ______________
+ *  Online (Cycliic) Link: https://crowded-pocketbook-duck.cyclic.app/ ______________
  *
  ********************************************************************************/
 
